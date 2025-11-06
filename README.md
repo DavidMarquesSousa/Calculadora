@@ -6,41 +6,41 @@ Here is an aesthetic and detailed README.md file crafted specifically for your p
 This file is written in Markdown. You can copy the text below and paste it directly into a new file named README.md in your "Calculadora" project folder.
 
 🧮 Calculadora Web
-A clean, modern, and responsive web-based calculator built with vanilla JavaScript, HTML, and styled with the Bootstrap framework. This project provides a user-friendly interface for performing standard arithmetic operations with robust error handling.
+  A clean, modern, and responsive web-based calculator built with vanilla JavaScript, HTML, and styled with the Bootstrap framework. This project provides a user-    friendly interface for performing standard arithmetic operations with robust error handling.
 
 📸 Screenshot
-(Suggestion: Replace the link below with a real screenshot of your project!)
+  (Suggestion: Replace the link below with a real screenshot of your project!)
 
 ✨ Features
-Standard Arithmetic: Perform addition (+), subtraction (-), multiplication (*), and division (/).
+  -Standard Arithmetic: Perform addition (+), subtraction (-), multiplication (*), and division (/).
 
-On-Screen Display: All numbers and operations are clearly shown on the display.
+  -On-Screen Display: All numbers and operations are clearly shown on the display.
 
-Input Protection: The main display is set to readonly to prevent invalid keyboard input, ensuring all entries are made via the on-screen buttons.
+  -Input Protection: The main display is set to readonly to prevent invalid keyboard input, ensuring all entries are made via the on-screen buttons.
 
-Error Handling: The calculator uses try...catch blocks to safely handle invalid expressions (e.g., 5 * / 3) and provides user-friendly alerts.
+  -Error Handling: The calculator uses try...catch blocks to safely handle invalid expressions (e.g., 5 * / 3) and provides user-friendly alerts.
 
-Clear Functionality: A "C" button is included to clear the display and reset the calculation.
+  -Clear Functionality: A "C" button is included to clear the display and reset the calculation.
 
-Responsive Design: Built with Bootstrap, the layout adapts smoothly to both desktop and mobile screens.
+  -Responsive Design: Built with Bootstrap, the layout adapts smoothly to both desktop and mobile screens.
 
 🛠️ Tech Stack
-This project was built using fundamental web technologies:
+  -This project was built using fundamental web technologies:
 
-HTML5: Provides the core structure and elements of the calculator.
+  -HTML5: Provides the core structure and elements of the calculator.
 
-Bootstrap 5: A powerful CSS framework used for styling buttons, the display, and creating a responsive grid layout.
+  -Bootstrap 5: A powerful CSS framework used for styling buttons, the display, and creating a responsive grid layout.
 
-Vanilla JavaScript (ES6+): Powers all the client-side logic, including:
+  -Vanilla JavaScript (ES6+): Powers all the client-side logic, including:
 
-Appending values to the display (addVal()).
+  -Appending values to the display (addVal()).
 
-Handling operator input (operation()).
+  -Handling operator input (operation()).
 
-Processing the final calculation (calculate()).
+  -Processing the final calculation (calculate()).
 
 💡 Code Highlight: Core Logic
-The heart of the calculator is the calculate() function, which uses eval() inside a try...catch block to safely compute the final result.
+  -The heart of the calculator is the calculate() function, which uses eval() inside a try...catch block to safely compute the final result.
 
 JavaScript
 
