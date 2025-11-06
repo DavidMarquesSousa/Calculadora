@@ -7,72 +7,55 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
+
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="styles.css">
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora Simple</title>
-
-</html>
+</head>
 
 <body>
-    <div class="row mt-5 mb-5 ml-1 mr-1">
-        <div class="col-sm-3">
-            <div class="card">
-                <div class="card-body">
+        <div class="dark dark position-absolute top-50 start-50 translate-middle row mt-5 mb-5 ml-1 mr-1 card">
+            <div class="dark card">
+                <div class="dark card-body">
                     <table style="width: 100% !important;">
                         <tr>
                             <td colspan="4"><input id="input" type="text" class="form-control" readonly></td>
                         </tr>
                         <tr>
-                            <td><button type="button" onclick="addVal(7);">7</button></td>
-                            <td><button type="button" onclick="addVal(8);">8</button></td>
-                            <td><button type="button" onclick="addVal(9);">9</button></td>
-                            <td><button type="button" onclick="addVal('+');">+</button></td>
+                            <td></td>
+                            <td></td>
+                            <td><button type="button" class="btn btn-outline-primary" onclick="deleteAll();">C</button></td>
+                            <td><button type="button" class="btn btn-outline-primary" onclick="calculate();">=</button></td>
                         </tr>
                         <tr>
-                            <td><button type="button" onclick="addVal(4);">4</button></td>
-                            <td><button type="button" onclick="addVal(5);">5</button></td>
-                            <td><button type="button" onclick="addVal(6);">6</button></td>
-                            <td><button type="button" onclick="addVal('-');">-</button></td>
+                            <td><button type="button" class="btn btn-outline-light" onclick="addVal(7);">7</button></td>
+                            <td><button type="button" class="btn btn-outline-light" onclick="addVal(8);">8</button></td>
+                            <td><button type="button" class="btn btn-outline-light" onclick="addVal(9);">9</button></td>
+                            <td><button type="button" class="btn btn-outline-primary" onclick="addVal('+');">+</button></td>
                         </tr>
                         <tr>
-                            <td><button type="button" onclick="addVal(1);">1</button></td>
-                            <td><button type="button" onclick="addVal(2);">2</button></td>
-                            <td><button type="button" onclick="addVal(3);">3</button></td>
-                            <td><button type="button" onclick="addVal('*');">*</button></td>
+                            <td><button type="button" class="btn btn-outline-light" onclick="addVal(4);">4</button></td>
+                            <td><button type="button" class="btn btn-outline-light" onclick="addVal(5);">5</button></td>
+                            <td><button type="button" class="btn btn-outline-light" onclick="addVal(6);">6</button></td>
+                            <td><button type="button" class="btn btn-outline-primary" onclick="addVal('-');">-</button></td>
                         </tr>
                         <tr>
-                            <td><button type="button" onclick="addVal(0);">0</button></td>
-                            <td><button type="button" onclick="deleteAll();">C</button></td>
-                            <td><button type="button" onclick="addVal('/');">/</button></td>
-                            <td><button type="button" onclick="calculate();">=</button></td>
+                            <td><button type="button" class="btn btn-outline-light" onclick="addVal(1);">1</button></td>
+                            <td><button type="button" class="btn btn-outline-light" onclick="addVal(2);">2</button></td>
+                            <td><button type="button" class="btn btn-outline-light" onclick="addVal(3);">3</button></td>
+                            <td><button type="button" class="btn btn-outline-primary" onclick="addVal('*');">*</button></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td><button type="button" class="btn btn-outline-light" onclick="addVal(0);">0</button></td>
+                            <td colspan="1"></td>
+                            <td><button type="button" class="btn btn-outline-primary" onclick="addVal('/');">/</button></td>
                         </tr>
                     </table>
                 </div>
             </div>
-        </div>
 
-        <script>
-            function addVal(value) {
-
-                // This line finds YOUR input field using its specific ID "resultados"
-                let display = document.getElementById('input');
-
-                // This line adds the number (7) to whatever is already in the box
-                display.value += value;
-            }
-
-            function deleteAll() {
-                let display = document.getElementById('input');
-                display.value = '';
-            }
-
-            function calculate() {
-                let display = document.getElementById('input');
-                try {
-                    display.value = eval(display.value);
-                } catch (error) {
-                    display.value = 'Error';
-                }
-            }
-        </script>
 </body>

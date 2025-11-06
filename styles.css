@@ -1,0 +1,25 @@
+table {
+  /* This ensures the cells themselves respect the alignment */
+  width: 100%; /* Or any specific width */
+  border-collapse: collapse; 
+}
+
+th, td {
+  /* Horizontal centering */
+  text-align: center;
+  
+  /* Vertical centering */
+  vertical-align: middle;
+  
+  /* Optional: Add padding and borders for a cleaner look */
+  padding: 8px;
+  border: 1px solid #ddd;
+}
+
+body {
+  background-color: rgb(27, 26, 26) !important;
+}
+
+.dark {
+  background-color: rgb(51, 51, 51);
+}
