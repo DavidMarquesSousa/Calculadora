@@ -18,9 +18,10 @@ function calculate() {
         if (display.value != '') {
         display.value = eval(display.value);
         }else{
-            alert("Please enter a valid expression to calculate.");
+            alert("Please enter an expression to calculate.");
         }
     } catch (error) {
-        display.value = 'Error';
+        alert("Please enter a valid expression to calculate.");
+        display.value = '';
     }
 }
